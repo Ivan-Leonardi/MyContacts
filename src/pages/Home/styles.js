@@ -69,8 +69,8 @@ export const Card = styled.div`
             align-items: center;
 
             small {
-                background: ${({theme}) => theme.colors.primary.lighter};
-                color: ${({theme}) => theme.colors.primary.main};
+                background: ${({ theme }) => theme.colors.primary.lighter};
+                color: ${({ theme }) => theme.colors.primary.main};
                 font-weight: bold;
                 text-transform: uppercase;
                 padding: 4px;
@@ -82,7 +82,7 @@ export const Card = styled.div`
         span {
             display: block;
             font-size: 14px;
-            color: ${({theme}) => theme.colors.gray[200]};
+            color: ${({ theme }) => theme.colors.gray[200]};
         }
     }
 
