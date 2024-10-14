@@ -1,4 +1,10 @@
-import { Container, Header, ListContainer, Card } from "./styles";
+import {
+    Container,
+    Header,
+    ListContainer,
+    Card,
+    InputSearchContainer,
+} from "./styles";
 
 import arrow from "../../assets/images/icons/seta-para-cima.png";
 import edit from "../../assets/images/icons/editar.png";
@@ -7,6 +13,9 @@ import trash from "../../assets/images/icons/lixeira.png";
 export default function Home() {
     return (
         <Container>
+            <InputSearchContainer>
+                <input type="text" placeholder="Pesquise pelo nome..." />
+            </InputSearchContainer>
             <Header>
                 <strong>3 contatos</strong>
                 <a href="/">Novo contato</a>
@@ -19,7 +28,7 @@ export default function Home() {
                         <img src={arrow} width={18} alt="Arrow" />
                     </button>
                 </header>
-                F
+
                 <Card>
                     <div className="info">
                         <div className="contact-name">
